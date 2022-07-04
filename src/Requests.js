@@ -1,4 +1,4 @@
-key = '592508130f6e9c513764df62060036ae';
+const key = '592508130f6e9c513764df62060036ae';
 
 const requests = {
     requestPopular: `https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=en-US&page=1`,
