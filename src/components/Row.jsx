@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { FaHeart, FaRegHeart } from 'react-icons/fa'
 
 const Row = ({ title, fetchURL }) => {
     const [movies, setMovies] = useState([]);
@@ -19,10 +18,8 @@ const Row = ({ title, fetchURL }) => {
                 <div id={'slider'}>
                     {movies.map((item, id) => (
                         <div className='w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2'>
-                            <img
-                                className='w-full h-auto block'
-                                src={`https://image.tmdb.org/t/p/w500/${item?.backdrop_path}`} alt={item?.title} />
-
+                            <img className='w-full h-auto block' src={`https://image.tmdb.org/t/p/w500/${item?.backdrop_path}`}
+                                alt={item?.title} />
                         </div>
                     ))}
                 </div>
