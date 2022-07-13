@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
 import bgHero from '../assets/bg-sign-up.jpg'
@@ -20,11 +20,11 @@ const Signup = () => {
   };
 
   return (
-    <>
+    <Fragment>
       <div className='w-full h-screen'>
         <img
           className='hidden sm:block absolute w-full h-full object-cover'
-          src= {bgHero}
+          src={bgHero}
           alt='/'
         />
         <div className='bg-black/60 fixed top-0 left-0 w-full h-screen'></div>
@@ -75,7 +75,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </>
+    </Fragment>
   );
 };
 

@@ -4,6 +4,7 @@ import { UserAuth } from '../context/AuthContext';
 import { db } from '../firebase';
 import { updateDoc, doc, onSnapshot } from 'firebase/firestore';
 import { AiOutlineClose } from 'react-icons/ai';
+import { Fragment } from 'react';
 
 const SavedShows = () => {
     const [movies, setMovies] = useState([]);
@@ -37,7 +38,7 @@ const SavedShows = () => {
     }
 
     return (
-        <>
+        <Fragment>
             <h2 className='text-white font-bold md:text-xl p-4'>My Shows</h2>
             <div className='relative flex items-center group'>
                 <MdChevronLeft
@@ -74,7 +75,7 @@ const SavedShows = () => {
                     size={40}
                 />
             </div>
-        </>
+        </Fragment>
     );
 };
 
