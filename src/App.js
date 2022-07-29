@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import ProtectedRoute from './components/ProtectedRoute'
 import { AuthContextProvider } from './context/AuthContext'
@@ -25,6 +26,7 @@ const App = () => {
                 <Account />
               </ProtectedRoute>} />
         </Routes>
+        <Footer />
       </AuthContextProvider>
     </Fragment>
   )
